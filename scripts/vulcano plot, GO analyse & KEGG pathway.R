@@ -53,7 +53,8 @@ goResults %>%
   labs(x="Hits (%)", y="GO term", colour="p value", size="Count")
 # view en save go results
 View(goResults)
-write.table(resultaten, file = 'results/dds.resultaten', row.names = TRUE, col.names = TRUE)
+setwd("locatie/ergens/op/je/computer/mapje/voor/resultaten")
+write.csv(goResults, "dds.resultaten.csv", row.names = TRUE)
 
 
 # kegg pathway analyse

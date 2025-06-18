@@ -43,7 +43,7 @@ De ruwe data van spreuken is eerst bewerkt voor analyse met behulp van [scripts/
 
 ## 📊 Resultaten
 
-Om te onderzoeken ofdat Rheumatoid arthritis invloed heeft op de exspressie van genen is er een Gene Ontology (GO)-verrijkingsanalyse uitgevoerd, te zien in [deze tabel](resultaten/GO-analyse). Adaptive immune response
+Om te onderzoeken ofdat Rheumatoid arthritis invloed heeft op de exspressie van genen is er een Gene Ontology (GO)-verrijkingsanalyse uitgevoerd, te zien in [deze tabel](resultaten/GO-analyse.). Adaptive immune response
 blijkt hieruit de laagste P-waarde te hebben bij de over-represented genes [p = 0.004]. 
 
 Om inzicht te krijgen in eigenschappen van de te gebruiken spreuken is er een overzicht gemaakt, te vinden in [deze tabel](resultaten/top_10_spells.csv). Onvergeeflijke vloeken zijn niet meegenomen in dit overzicht. 
