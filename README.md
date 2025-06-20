@@ -1,4 +1,4 @@
-# Hoe veranderd expressie de expressie van genen
+# Hoe veranderd Rheumatoid arthritis expressie de expressie van genen
 Er is onderzocht hoe Rheumatoid arthritis de expressie van genen veranderd doormiddel van verschillende analyses zoals DESeq en KEGG pathway.
 
 ## 📁 Inhoud
