@@ -42,8 +42,8 @@ De data is verstrekt door de Afdeling Magische Wetshandhaving en Ollivanders Wan
 De ruwe data van spreuken is eerst bewerkt voor analyse met behulp van [scripts/01_clean_spell_data.R](scripts/01_clean_spell_data.R). Vervolgens zijn de spreuken geanalyseerd op kracht en nauwkeurigheid met [scripts/02_spell_analysis.R](scripts/02_spell_analysis.R).
 
 Vervolgens is er onderzocht welke KEGG pathway hierbij zou passen hieruit kwam hsa04612, Antigen processing and presentation
-## 📊 Resultaten
-Om te onderzoeken ofdat Rheumatoid arthritis invloed heeft op de exspressie van genen is er een DESeq2 analyse uitgevoerd te zien in [deze tabel](resultaten/dds.resultaten). Hierin zijn alle genen met een p waarde en foldchange zichtbaar. Vervolgens zijn er een twee volcano plots gemaakt te zien hier [volcanoplot1](resultaten/vulcano plot 1.png) en [volcano plot 2](resultaten/vulcano plot 1.png). In de figuren is de log2 foldchange uitgezet tegen de log10 van de p waarden. In figuur 1 zijn alle significante genen groen gekleurd. In figuur 2 de groene waarden significant voor de foldchange maar niet voor de p waarden, de rode genen zijn dit wel [welke reden is er dat sommige genen wel een naam hebben en sommige niet?]. 
+## Resultaten
+Om te onderzoeken ofdat Rheumatoid arthritis invloed heeft op de exspressie van genen is er een DESeq2 analyse uitgevoerd te zien in [deze tabel](resultaten/dds.resultaten). Hierin zijn alle genen met een p waarde en foldchange zichtbaar. Vervolgens zijn er een twee volcano plots gemaakt te zien hier [dit figuur](resultaten/vulcano plot 1.png) en [volcano plot 2](resultaten/vulcano plot 1.png). In de figuren is de log2 foldchange uitgezet tegen de log10 van de p waarden. In figuur 1 zijn alle significante genen groen gekleurd. In figuur 2 de groene waarden significant voor de foldchange maar niet voor de p waarden, de rode genen zijn dit wel [welke reden is er dat sommige genen wel een naam hebben en sommige niet?]. 
 
 Er is ook een Gene Ontology (GO)-verrijkingsanalyse uitgevoerd, te zien in [deze tabel](resultaten/GO-analyse.csv). Adaptive immune response, GO:0002250
 blijkt hieruit de laagste P-waarde te hebben bij de over-represented genes [p = 0.004]. Daarna is er een KEGG pathway analyse uitgevoerd naar de hsa04612 pathway te zien in [dit figuur](resultaten/hsa04612.png). In dit figuur zijn alle downregulated genen groen gekleurd.  
@@ -51,9 +51,6 @@ blijkt hieruit de laagste P-waarde te hebben bij de over-represented genes [p = 
 ## Conclusie
 
 Uit de resultaten is gebleken dat Rheumatoid arthritis op verschillende genen invloed heeft waardoor sommige een hogere exspressie hebben en sommige een lagere. Ook is er extra gekeken naar de exspressie in de hsa04612 KEGG pathway hierin is te zien dat veel genen een lagere exspressie hebben dan normaal. Dit komt ook evereen met andere onderzoeken [Song et al., z.d.](bronnen/Identifying key genes in rheumatoid arthritis using bioinformatics analysis). Voor een vervolg onderzoek is aan te raden om verder te kijken naar andere pathways om nog meer inzicht te krijgen hoe Rheumatoid arthritis de exspressie van genen kan veranderen.
-
-
-Spreuken met meer accuraatheid lijken minder krachtig te zijn. Een uitzondering op deze trend is de onvergeeflijke vloek *Avada Kedavra*, welke beter niet gebruikt kan worden. 
 
 
 
