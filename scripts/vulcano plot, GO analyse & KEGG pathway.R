@@ -54,7 +54,7 @@ goResults %>%
 # view en save go results
 View(goResults)
 setwd("locatie/ergens/op/je/computer/mapje/voor/resultaten")
-write.csv(goResults, "dds.resultaten.csv", row.names = TRUE)
+write.csv(goResults, "GO-analyse.csv", row.names = TRUE)
 
 
 # kegg pathway analyse
