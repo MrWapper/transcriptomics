@@ -20,6 +20,9 @@ Rheumatoid arthritis is een auto-immuunziekte, dit betekend dat je eigen immuuns
 
 ## Methoden
 
+Om te onderzoeken ofdat Rheumatoid arthritis de expressie van genen veranderd zijn er van acht deelnemers samples genomen. Vier deelnemers waren gezond en vier hebben Rheumatoid arthritis, alle deelnemers zijn een vrouw. De gemiddelde leeftijd van de deelnemers met Rheumatoid arthritis licht hoger dan de controle groep dit is terug tie zien in [deze tabel](assets/ruw-data-deelnemers.csv). 
+
+
 [flowchard](assets/flowchard.PNG)
 De data is verstrekt door de Afdeling Magische Wetshandhaving en Ollivanders Wandwinkel Archieven. 
 
