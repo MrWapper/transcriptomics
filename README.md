@@ -1,20 +1,5 @@
-# transcriptomics
-project over transcriptomics van het ruema gen
-
-<p align="center">
-  <img src="assets/Logo_SpellMetrics.png" alt="Wizarding Spell Metrics Logo" width="600"/>
-</p>
-
-
-# 🧙‍♂️ Wizarding Spell Metrics
-
-Welkom in **Wizarding Spell Metrics**, waar de data nep is, maar de structuur *verrassend oké* is. Deze repo is gemaakt om te laten zie hoe je een bio-informatica project structureert in GitHub met behulp van een onzin dataset. files mogen gedownload en hergebruikt worden (zoals [deze README.md file](README.md)). Vraag ook gerust AI voor tips!
-
-Perfect voor:
-- Wegwijs worden in GitHub
-- Het leren structureren van data
-
-> `I will not have you in my class if you continue to be a babbling, bumbling band of baboons who can't even SORT their data!`
+# Hoe veranderd expressie de expressie van genen
+Er is onderzocht hoe Rheumatoid arthritis de expressie van genen veranderd doormiddel van verschillende analyses zoals DESeq en KEGG pathway.
 
 ## 📁 Inhoud
 
@@ -31,7 +16,7 @@ Perfect voor:
 
 ## Inleiding
 
-Rheumatoid arthritis is een auto-immuunziekte, dit betekend dat je eigen immuunsysteem je eigen lichaam aanvalt. Hierdoor komen er ontstekingseiwitten vrij. Dit komt vaak voor in de gewrichten en deze gaan hierdoor ontsteken. De oorzaak van Rheumatoid arthritis is niet bekend wel zijn er verschillende factoren die de kans op Rheumatoid arthritis zouden kunnen vergroten zoals, gender, leeftijd, genetische aanleg en overgewicht [Mayo Clinic, april 2025](https://www.mayoclinic.org/diseases-conditions/rheumatoid-arthritis/symptoms-causes/syc-20353648?p=1). Rheumatoid arthritis heeft verschillende symptomen zoals, zoals, stijfe en/of gezwollen gewrichten, vermoeidheid en minder goed kunnen bewegen [ClevelandClinic, juni 2024](https://my.clevelandclinic.org/health/diseases/4924-rheumatoid-arthritis). Er is op dit moment nog geen medicijn voor Rheumatoid arthritis daarom is het belangrijk om precies te weten hoe dat deze ziekte werkt. In dit onderzoek wordt daarom onderzocht welk effect Rheumatoid arthritis heeft op de expressie van genen en pathways.
+Rheumatoid arthritis is een auto-immuunziekte, dit betekend dat je eigen immuunsysteem je eigen lichaam aanvalt. Hierdoor komen er ontstekingseiwitten vrij, dit komt vaak voor in de gewrichten en deze gaan hierdoor ontsteken. De oorzaak van Rheumatoid arthritis is niet bekend wel zijn er verschillende factoren die de kans op Rheumatoid arthritis zouden kunnen vergroten zoals, gender, leeftijd, genetische aanleg en overgewicht [Mayo Clinic, april 2025](https://www.mayoclinic.org/diseases-conditions/rheumatoid-arthritis/symptoms-causes/syc-20353648?p=1). Rheumatoid arthritis heeft verschillende symptomen zoals, zoals, stijfe en/of gezwollen gewrichten, vermoeidheid en minder goed kunnen bewegen [ClevelandClinic, juni 2024](https://my.clevelandclinic.org/health/diseases/4924-rheumatoid-arthritis). Er is op dit moment nog geen medicijn voor Rheumatoid arthritis daarom is het belangrijk om precies te weten hoe dat deze ziekte werkt. In dit onderzoek wordt daarom onderzocht welk effect Rheumatoid arthritis heeft op de expressie van genen en pathways.
 
 ## Methoden
 
