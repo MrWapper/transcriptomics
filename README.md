@@ -1,6 +1,6 @@
 # Expressie in de KEGG-pathway hsa04612 – Antigen Processing and Presentation Pathway bij Reumatoïde Artritis
 
-Er is onderzocht hoe Reumatoïde Artritis de genexpressie beïnvloedt, aan de hand van verschillende transcriptomics-analyses zoals DESeq en KEGG-pathwayanalyses.
+Er is onderzocht hoe Reumatoïde Artritis de genexpressie beïnvloedt, aan de hand van verschillende transcriptomics-analyses zoals DESeq en KEGG-pathway.
 
 ## 📁 Inhoud
 
@@ -10,7 +10,7 @@ Er is onderzocht hoe Reumatoïde Artritis de genexpressie beïnvloedt, aan de ha
 - `resultaten/` – grafieken en tabellen  
 - `bronnen/` – gebruikte bronnen  
 - `README.md` – het document dat de tekst op deze pagina genereert  
-- `assets/` – overige documenten voor de opmaak van deze pagina  
+- `assets/` – overige documenten 
 - `data_stewardship/` – informatie voor de competentie beheren
 
 ---
@@ -28,11 +28,7 @@ Er is momenteel geen genezende behandeling beschikbaar, daarom is het belangrijk
 
 Om te onderzoeken of dat Reumatoïde artritis de expressie van genen veranderd zijn er van acht deelnemers uit het synoviumbiopten. Vier deelnemers waren gezond, vier hadden langer dan twaalf maanden Reumatoïde Artritis. Alle deelnemers waren vrouwen. De behandelgroep was gemiddeld ouder dan de controlegroep, zoals te zien in [deze tabel](assets/ruw_data_deelnemers.csv). De methoden van de data-analyses zijn in deze [flowchart](assets/flowchard.PNG) in een versimpelde manier weergeven. Hieronder worden ze in meer diepte uitgelegd.
 
-- **Mappen van reads:** Reads werden gemapt op het [menselijk genoom (GCF_000001405.40)](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/) met behulp van [dit script](scripts/mapping_data.R) en de package [Rsubread v2.22.1](https://bioconductor.org/packages/release/bioc/html/Rsubread.html).
-- **Count matrix:** Een count matrix werd gegenereerd via [Rsamtools v2.24.0](https://bioconductor.org/packages/release/bioc/html/Rsamtools.html) met [dit script](scripts/count_matrix.R).
-- **DESeq2-analyse:** Voor differentiële expressieanalyse is [DESeq2 v1.48.1](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) gebruikt ([script](scripts/DESeq2-analyse.R)). De resultaten zijn te vinden in [deze tabel](resultaten/dds.resultaten).
-
-Daarna zijn drie aanvullende analyses uitgevoerd met behulp van de DESeq resultaten via [dit script](scripts/vulcano_plot,GO-analyse&KEGG_pathway.R):
+De reads zijn als eerste gemapt tegen het [menselijk genoom versie GCF_000001405.40](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/) met [dit script](scripts/mapping_data.R). hiervoor is de package [Rsubread versie 2.22.1](https://bioconductor.org/packages/release/bioc/html/Rsubread.html) gebruikt. Na het mappen is van de data een count matrix gemaakt met [Rsamtools versie 2.24.0](https://bioconductor.org/packages/release/bioc/html/Rsamtools.html) volgens [dit script](scripts/count_matrix.R). Daarna is er een [DESeq2 versie 1.48.1](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) analyse gedaan om de significante resultaten in een [deze tabel](resultaten/dds.resultaten) te zetten, er is gebruik gemaakt van [dit script](scripts/DESeq2-analyse.R). Met de resultaten van de DESeq2 analyse zijn vervolgens drie andere analyses gedaan met [dit script](scripts/vulcano_plot,GO-analyse&KEGG_pathway.R). Daarna zijn drie aanvullende analyses uitgevoerd met behulp van de DESeq resultaten via [dit script](scripts/vulcano_plot,GO-analyse&KEGG_pathway.R):
 
 - **Vulkaanplot:** Met [EnhancedVolcano v1.26.0](https://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html) is een vulkaanplot gegenereerd om significante genen te visualiseren.
 - **GO-analyse:** Met [goseq v1.60.0](https://bioconductor.org/packages/release/bioc/html/goseq.html) is een GO-verrijkingsanalyse uitgevoerd.
@@ -61,7 +57,7 @@ De KEGG-pathwayanalyse van [hsa04612](resultaten/hsa04612.png) laat zien dat vee
 
 ## ✅ Conclusie
 
-Uit de resultaten is gebleken dat Reumatoïde Artritis invloed heeft op de expressie van meerdere genen, waarvan sommige verhoogd en andere verlaagd zijn. De KEGG-pathway hsa04612 toont duidelijk een afname in expressie, wat overeenkomt met eerdere bevindingen waarin de expressie van de pathway ook afneemt [Song et al., z.d.](bronnen/Identifying_key_genes_in_rheumatoid_arthritis_using_bioinformatics_analysis.pdf). Voor vervolgonderzoek is het aan te bevelen om leeftijdsverschillen tussen behandel- en controlegroep te minimaliseren.
+Uit de resultaten is gebleken dat Reumatoïde Artritis invloed heeft op de expressie van meerdere genen, waarvan sommige verhoogd en andere verlaagd zijn. De KEGG-pathway hsa04612 antigen processing and presentation pathway toont duidelijk een afname in expressie, wat overeenkomt met eerdere bevindingen waarin de expressie van de pathway ook afneemt [Song et al., z.d.](bronnen/Identifying_key_genes_in_rheumatoid_arthritis_using_bioinformatics_analysis.pdf). Voor vervolgonderzoek is het aan te bevelen om leeftijdsverschillen tussen behandel- en controlegroep te minimaliseren.
 
 ---
 
